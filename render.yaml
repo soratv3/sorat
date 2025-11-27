@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: sorat-vue
+    env: docker
+    rootDir: vue_api
+    dockerfilePath: vue_api/Dockerfile
+    plan: free
+    autoDeploy: true
+    envVars:
+      - key: PORT
+        value: "8000"
